@@ -1,0 +1,30 @@
+HTTrack3.49-2 launched on Mon, 21 Nov 2022 17:03:19 at https://malermeister-wild.de/
+(httrack -Y https://malermeister-wild.de/ )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+17:06:07	Error: 	"Not Found" (404) at link https://malermeister-wild.de/assets/css/assets/css3pie/1.0.0/PIE.htc (from https://malermeister-wild.de/assets/css/fe4a8d393edc.css)
+17:06:07	Error: 	"Not Found" (404) at link https://malermeister-wild.de/assets/font/lato-v14-latin-regular.eot (from https://malermeister-wild.de/assets/css/fe4a8d393edc.css)
+17:06:07	Error: 	"Not Found" (404) at link https://malermeister-wild.de/assets/font/lato-v14-latin-regular.eot? (from https://malermeister-wild.de/assets/css/fe4a8d393edc.css)
+17:06:07	Error: 	"Not Found" (404) at link https://malermeister-wild.de/assets/font/lato-v14-latin-regular.woff2 (from https://malermeister-wild.de/assets/css/fe4a8d393edc.css)
+17:06:07	Error: 	"Not Found" (404) at link https://malermeister-wild.de/assets/font/lato-v14-latin-regular.woff (from https://malermeister-wild.de/assets/css/fe4a8d393edc.css)
+17:06:07	Error: 	"Not Found" (404) at link https://malermeister-wild.de/assets/font/lato-v14-latin-regular.ttf (from https://malermeister-wild.de/assets/css/fe4a8d393edc.css)
+17:06:07	Error: 	"Not Found" (404) at link https://malermeister-wild.de/assets/font/lato-v14-latin-regular.svg (from https://malermeister-wild.de/assets/css/fe4a8d393edc.css)
+17:06:07	Error: 	"Not Found" (404) at link https://malermeister-wild.de/assets/font/lato-v14-latin-italic.eot (from https://malermeister-wild.de/assets/css/fe4a8d393edc.css)
+17:06:07	Error: 	"Not Found" (404) at link https://malermeister-wild.de/assets/font/lato-v14-latin-italic.eot? (from https://malermeister-wild.de/assets/css/fe4a8d393edc.css)
+17:06:07	Error: 	"Not Found" (404) at link https://malermeister-wild.de/assets/font/lato-v14-latin-italic.woff2 (from https://malermeister-wild.de/assets/css/fe4a8d393edc.css)
+17:06:07	Error: 	"Not Found" (404) at link https://malermeister-wild.de/assets/font/lato-v14-latin-italic.woff (from https://malermeister-wild.de/assets/css/fe4a8d393edc.css)
+17:06:07	Error: 	"Not Found" (404) at link https://malermeister-wild.de/assets/font/lato-v14-latin-italic.ttf (from https://malermeister-wild.de/assets/css/fe4a8d393edc.css)
+17:06:07	Error: 	"Not Found" (404) at link https://malermeister-wild.de/assets/font/lato-v14-latin-italic.svg (from https://malermeister-wild.de/assets/css/fe4a8d393edc.css)
+17:06:07	Error: 	"Not Found" (404) at link https://malermeister-wild.de/assets/font/lato-v14-latin-700.eot (from https://malermeister-wild.de/assets/css/fe4a8d393edc.css)
+17:06:07	Error: 	"Not Found" (404) at link https://malermeister-wild.de/assets/font/lato-v14-latin-700.eot? (from https://malermeister-wild.de/assets/css/fe4a8d393edc.css)
+17:06:07	Error: 	"Not Found" (404) at link https://malermeister-wild.de/assets/font/lato-v14-latin-700.woff2 (from https://malermeister-wild.de/assets/css/fe4a8d393edc.css)
+17:06:07	Error: 	"Not Found" (404) at link https://malermeister-wild.de/assets/font/lato-v14-latin-700.woff (from https://malermeister-wild.de/assets/css/fe4a8d393edc.css)
+17:06:07	Error: 	"Not Found" (404) at link https://malermeister-wild.de/assets/font/lato-v14-latin-700.ttf (from https://malermeister-wild.de/assets/css/fe4a8d393edc.css)
+17:06:07	Error: 	"Not Found" (404) at link https://malermeister-wild.de/assets/font/lato-v14-latin-700.svg (from https://malermeister-wild.de/assets/css/fe4a8d393edc.css)
+
+HTTrack Website Copier/3.49-2 mirror complete in 2 minutes 48 seconds : 176 links scanned, 156 files written (8402815 bytes overall) [8207103 bytes received at 48851 bytes/sec], 340719 bytes transferred using HTTP compression in 15 files, ratio 29%, 17.6 requests per connection
+(19 errors, 0 warnings, 0 messages)
