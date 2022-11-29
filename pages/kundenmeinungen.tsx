@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import HCaptcha from "@hcaptcha/react-hcaptcha";
 import Link from "next/link";
 
-export default function Testimonials() {
+export default function Kundenmeinungen() {
     const [enableSubmit, setEnableSubmit] = useState(false);
     const disableSubmit = () => setEnableSubmit(false);
     const testimonials = [
@@ -98,7 +98,7 @@ export default function Testimonials() {
                 {/*    </ul>*/}
                 {/*</div>*/}
                 <div className="form">
-                    <form action="/testimonials-post" method="post">
+                    <form action="/kundenmeinungen/form-post" method="post">
                         <div className="formbody">
                             <div className="widget">
                                 <label htmlFor="ctrl_name" className="mandatory">
