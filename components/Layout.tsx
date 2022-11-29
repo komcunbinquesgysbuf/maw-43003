@@ -8,7 +8,7 @@ type LayoutProps = {
 const Layout: FC<LayoutProps> = ({children}) => {
     const router = useRouter();
     const navMap: Record<string, string> = {
-        Startseite: "/startseite/index.html",
+        Startseite: "/",
         Leistungsangebot: "/leistungsangebot/index.html",
         Referenzen: "/referenzen/index.html",
         Kundenmeinungen: "/kundenmeinungen/index.html",
@@ -40,7 +40,7 @@ const Layout: FC<LayoutProps> = ({children}) => {
                 <div className="inside">
                     <div className="logo">
                         <h1>
-                            <a className="logo" href="/startseite/index.html" title="zur Startseite">
+                            <a className="logo" href="/" title="zur Startseite">
                                 <span className="logo">Malermeister André Wild</span>
                             </a>
                         </h1>
@@ -62,7 +62,7 @@ const Layout: FC<LayoutProps> = ({children}) => {
                     <div id="left">
                         <div className="inside">
                             <div className="mod_navigation block">
-                                <a className="invisible" href="index.html#skipNavigation3">Navigation überspringen</a>
+                                <a className="invisible" href="#skipNavigation3">Navigation überspringen</a>
                                 <ul className="level_1">
                                     {
                                         navList
