@@ -122,19 +122,14 @@ export default function Kundenmeinungen() {
                                           cols={40} required/>
                             </div>
                             <div className="submit_container">
-                                <div style={{
-                                    visibility: enableSubmit ? 'hidden' : 'visible',
-                                    height: enableSubmit ? 0 : "auto"
-                                }}>
-                                    <HCaptcha
-                                        sitekey="51570365-47c6-4056-93d1-16cdb6c9bb46"
-                                        onVerify={() => setEnableSubmit(true)}
-                                        onChalExpired={disableSubmit}
-                                        onClose={disableSubmit}
-                                        onError={disableSubmit}
-                                        onExpire={disableSubmit}
-                                    />
-                                </div>
+                                <HCaptcha
+                                    sitekey="51570365-47c6-4056-93d1-16cdb6c9bb46"
+                                    onVerify={() => setEnableSubmit(true)}
+                                    onChalExpired={disableSubmit}
+                                    onClose={disableSubmit}
+                                    onError={disableSubmit}
+                                    onExpire={disableSubmit}
+                                />
                                 {enableSubmit && <input type="submit" className="submit" value="Kommentar absenden"/>}
                             </div>
                         </div>
