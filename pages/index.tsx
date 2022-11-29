@@ -7,7 +7,7 @@ export default function Home() {
     const images = [{src: '/files/malermeister-wild/zertifikat.png', width: 320, height: 447}];
     return (
         <div className="ce_text block">
-            <div className="image_container float_right" style={{padding: "25px 10px 10px 35px", width: "200px", float: "right"}}>
+            <div className="image_container float_right" style={{padding: "25px 15px 15px 35px", width: "200px", float: "right"}}>
                 <PhotoAlbum
                     layout="columns"
                     photos={images}
