@@ -6,7 +6,7 @@ type LayoutProps = {
     children: ReactNode
 };
 const Layout: FC<LayoutProps> = ({children}) => {
-    const router = useRouter();
+    const {pathname} = useRouter();
     const navMap: Record<string, string> = {
         Startseite: "/",
         Leistungsangebot: "/leistungsangebot/index.html",
@@ -14,14 +14,14 @@ const Layout: FC<LayoutProps> = ({children}) => {
         Kundenmeinungen: "/kundenmeinungen/index.html",
         Meisterstück: "/meisterstueck/index.html",
         Kontakt: "/kontakt/index.html",
-        Impressum: "/impressum/index.html",
+        Impressum: "/impressum",
         Datenschutz: "/datenschutz/index.html",
         Testimonials: "/testimonials"
     };
     const navList = Object.keys(navMap).map(title => ({
         title,
         href: navMap[title],
-        isActive: router.pathname === navMap[title]
+        isActive: pathname === navMap[title]
     }));
     return (
         <div id="wrapper">
@@ -54,7 +54,7 @@ const Layout: FC<LayoutProps> = ({children}) => {
                 <div id="container">
                     <div id="main">
                         <div className="inside">
-                            <div className="mod_article block">
+                            <div className="mod_article block" id={pathname.replaceAll('/', '') || 'startseite'}>
                                 {children}
                             </div>
                         </div>
