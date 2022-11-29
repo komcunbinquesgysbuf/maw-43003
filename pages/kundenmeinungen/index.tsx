@@ -4,6 +4,7 @@ import Link from "next/link";
 
 export default function Kundenmeinungen() {
     const [enableSubmit, setEnableSubmit] = useState(false);
+    const [pageNo, setPageNo] = useState(1);
     const disableSubmit = () => setEnableSubmit(false);
     const testimonials = [
         {
@@ -66,6 +67,8 @@ export default function Kundenmeinungen() {
                 sehr freundlich. Ein Malermeister, der sein Geld wirklich wert ist!</p>
         },
     ];
+    const pageSize = 4;
+    const numPages = Math.ceil(testimonials.length / pageSize);
     return (
         <>
             <h2 className="ce_headline">Kundenmeinungen</h2>
@@ -77,7 +80,7 @@ export default function Kundenmeinungen() {
             <div className="ce_comments block">
                 {
 
-                    testimonials.map(({id, author, date, comment}, index) => (
+                    testimonials.slice((pageNo - 1) * pageSize, pageNo * pageSize).map(({id, author, date, comment}, index) => (
                         <div className="comment_default" id={id} key={id}>
                             <p className="info">Kommentar von {author}{' | '}
                                 <span className="date">{date}</span>
@@ -87,16 +90,21 @@ export default function Kundenmeinungen() {
                     ))
 
                 }
-                {/*<div className="pagination block">*/}
-                {/*    <p>Seite 1 von 2</p>*/}
-                {/*    <ul>*/}
-                {/*        <li><span className="current">1</span></li>*/}
-                {/*        <li><a className="link" href="index8816.html" title="Gehe zu Seite 2">2</a>*/}
-                {/*        </li>*/}
-                {/*        <li className="next"><a className="next" href="index8816.html"*/}
-                {/*                                title="Gehe zu Seite 2">Vorwärts</a></li>*/}
-                {/*    </ul>*/}
-                {/*</div>*/}
+                <div className="pagination block">
+                    <button
+                        className="button disabled"
+                        disabled={pageNo <= 1}
+                        title="zurück"
+                        onClick={() => setPageNo(n => n - 1)}
+                    >«</button>
+                    <button className="button disabled" disabled>Seite {pageNo} von {numPages}</button>
+                    <button
+                        className="button disabled"
+                        disabled={pageNo >= numPages}
+                        title="weiter"
+                        onClick={() => setPageNo(n => n + 1)}
+                    >»</button>
+                </div>
                 <div className="form">
                     <form action="/kundenmeinungen/form-post" method="post">
                         <div className="formbody">
