@@ -60,7 +60,7 @@ const Layout: FC<LayoutProps> = ({children}) => {
                 <div id="container">
                     <div id="main">
                         <div className="inside">
-                            <div className="mod_article block" id={pathname.replaceAll('/', '') || 'startseite'}>
+                            <div className="mod_article block" id={pathname.replace(/\//g, '') || 'startseite'}>
                                 {children}
                             </div>
                         </div>
