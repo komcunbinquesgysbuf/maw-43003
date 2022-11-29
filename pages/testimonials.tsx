@@ -78,7 +78,7 @@ export default function Testimonials() {
                 {
 
                     testimonials.map(({id, author, date, comment}, index) => (
-                        <div className="comment_default" id={id}>
+                        <div className="comment_default" id={id} key={id}>
                             <p className="info">Kommentar von {author}{' | '}
                                 <span className="date">{date}</span>
                             </p>
