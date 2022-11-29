@@ -74,7 +74,7 @@ const Layout: FC<LayoutProps> = ({children}) => {
                                                     ]
                                                         .join('');
                                                     return (
-                                                        <li className={className}>
+                                                        <li className={className} key={href}>
                                                             {isActive
                                                                 ? <span className={className}>{title}</span>
                                                                 : (
