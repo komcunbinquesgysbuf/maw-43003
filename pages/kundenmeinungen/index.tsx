@@ -129,6 +129,8 @@ export default function Kundenmeinungen() {
                                     onClose={disableSubmit}
                                     onError={disableSubmit}
                                     onExpire={disableSubmit}
+                                    onLoad={disableSubmit}
+                                    onOpen={disableSubmit}
                                 />
                                 {enableSubmit && <input type="submit" className="submit" value="Kommentar absenden"/>}
                             </div>
