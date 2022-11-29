@@ -1,3 +1,6 @@
+import Image from "next/image";
+import Link from "next/link";
+
 export default function Impressum() {
     return (
         <>
@@ -11,9 +14,16 @@ export default function Impressum() {
                 <div className="contact_details">
                     <p><strong>Kontaktdaten</strong></p>
                     <p><span>Tel.:</span> 0172 9957201</p>
-                    <p><span>E-Mail:</span> <img alt="kontakt AT (Domainname dieser Seite)"
-                                                 src="/files/malermeister-wild/email.png"/></p>
-                    <p><span>Internet:</span> <a href="/" title="www.malermeister-wild.de">www.malermeister-wild.de</a>
+                    <p>
+                        <span>E-Mail:</span>
+                        <Image
+                            alt="kontakt AT (Domainname dieser Seite)"
+                            src="/files/malermeister-wild/email.png"
+                            width={191}
+                            height={16}
+                        />
+                    </p>
+                    <p><span>Internet:</span> <Link href="/">https://malermeister-wild.de</Link>
                     </p>
                 </div>
             </div>
@@ -21,8 +31,12 @@ export default function Impressum() {
             <div className="ce_image block">
                 <div className="image_container">
                     <a href="https://sedna-soft.de/">
-                        <img alt="" height="40" src="/assets/images/d/sednasoft-14710dad.png"
-                             width="170"/>
+                        <Image
+                            alt="SednaSoft logo"
+                            src="/assets/images/d/sednasoft-14710dad.png"
+                            width={170}
+                            height={40}
+                        />
                     </a>
                 </div>
             </div>

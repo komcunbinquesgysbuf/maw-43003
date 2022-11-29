@@ -1,5 +1,6 @@
 import React, {FC, ReactNode} from 'react';
 import Head from 'next/head';
+import Image from "next/image";
 import Link from "next/link";
 import {useRouter} from 'next/router';
 type LayoutProps = {
@@ -40,13 +41,18 @@ const Layout: FC<LayoutProps> = ({children}) => {
                 <div className="inside">
                     <div className="logo">
                         <h1>
-                            <a className="logo" href="/" title="zur Startseite">
+                            <Link className="logo" href="/" title="zur Startseite">
                                 <span className="logo">Malermeister André Wild</span>
-                            </a>
+                            </Link>
                         </h1>
                     </div>
                     <div className="shadow">
-                        <img alt="Kopfbild" src="/files/malermeister-wild/img/header-image.png"/>
+                        <Image
+                            alt="Kopfbild"
+                            src="/files/malermeister-wild/img/header-image.png"
+                            width={960}
+                            height={250}
+                        />
                     </div>
                 </div>
             </div>
@@ -102,9 +108,11 @@ const Layout: FC<LayoutProps> = ({children}) => {
                         <span>Tel.: 0172 9957201</span>
                         <span>
                             E-Mail:
-                            <img
+                            <Image
                                 alt="kontakt AT (Domainname dieser Seite)"
                                 src="/files/malermeister-wild/email-footer.png"
+                                width={197}
+                                height={15}
                             />
                         </span>
                     </p>
