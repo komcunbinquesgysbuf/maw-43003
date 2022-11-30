@@ -14,7 +14,7 @@ const Layout: FC<LayoutProps> = ({children}) => {
         Referenzen: "/referenzen/index.html",
         Kundenmeinungen: "/kundenmeinungen",
         Meisterstück: "/meisterstueck/index.html",
-        Kontakt: "/kontakt/index.html",
+        Kontakt: "/kontakt",
         Impressum: "/impressum",
         Datenschutz: "/datenschutz",
     };
