@@ -10,7 +10,7 @@ const Layout: FC<LayoutProps> = ({children}) => {
     const {pathname} = useRouter();
     const navMap: Record<string, string> = {
         Startseite: "/",
-        Leistungsangebot: "/leistungsangebot/index.html",
+        Leistungsangebot: "/leistungsangebot",
         Referenzen: "/referenzen/index.html",
         Kundenmeinungen: "/kundenmeinungen",
         Meisterstück: "/meisterstueck/index.html",
