@@ -16,7 +16,7 @@ const Layout: FC<LayoutProps> = ({children}) => {
         Meisterstück: "/meisterstueck/index.html",
         Kontakt: "/kontakt/index.html",
         Impressum: "/impressum",
-        Datenschutz: "/datenschutz/index.html",
+        Datenschutz: "/datenschutz",
     };
     const navList = Object.keys(navMap).map(title => ({
         title,

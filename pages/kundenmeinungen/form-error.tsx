@@ -9,7 +9,7 @@ export default function FormError() {
                 <p className="info">
                     Die abgesendeten Daten werden nur zum Zweck der Bearbeitung Ihres Anliegens verarbeitet.
                     Weitere Informationen finden Sie in unserer {' '}
-                    <Link href="/datenschutz/index.html">Datenschutzerklärung</Link>.
+                    <Link href="/datenschutz">Datenschutzerklärung</Link>.
                 </p>
             </div>
         </>
