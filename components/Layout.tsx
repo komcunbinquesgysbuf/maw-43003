@@ -13,7 +13,7 @@ const Layout: FC<LayoutProps> = ({children}) => {
         Leistungsangebot: "/leistungsangebot",
         Referenzen: "/referenzen",
         Kundenmeinungen: "/kundenmeinungen",
-        Meisterstück: "/meisterstueck/index.html",
+        Meisterstück: "/meisterstueck",
         Kontakt: "/kontakt",
         Impressum: "/impressum",
         Datenschutz: "/datenschutz",
