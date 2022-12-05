@@ -11,7 +11,7 @@ const Layout: FC<LayoutProps> = ({children}) => {
     const navMap: Record<string, string> = {
         Startseite: "/",
         Leistungsangebot: "/leistungsangebot",
-        Referenzen: "/referenzen/index.html",
+        Referenzen: "/referenzen",
         Kundenmeinungen: "/kundenmeinungen",
         Meisterstück: "/meisterstueck/index.html",
         Kontakt: "/kontakt",
