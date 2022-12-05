@@ -85,19 +85,22 @@ const Referenzen = ({photos, slides}: ReferenzenProps) => {
     return (
         <>
             <h2 className="ce_headline">Referenzen</h2>
-            <PhotoAlbum
-                layout="rows"
-                defaultContainerWidth={680}
-                photos={photos}
-                onClick={(event, photo, index) => setIndex(index)}
-            />
-            <Lightbox
-                open={index >= 0}
-                index={index}
-                close={() => setIndex(-1)}
-                slides={slides}
-                plugins={[Captions]}
-            />
+            <div className="ce_text">
+                <PhotoAlbum
+                    layout="rows"
+                    defaultContainerWidth={680}
+                    photos={photos}
+                    spacing={40}
+                    onClick={(event, photo, index) => setIndex(index)}
+                />
+                <Lightbox
+                    open={index >= 0}
+                    index={index}
+                    close={() => setIndex(-1)}
+                    slides={slides}
+                    plugins={[Captions]}
+                />
+            </div>
         </>
     );
 };
